@@ -1,0 +1,28 @@
+{
+  "name": "phone-book-graphql",
+  "version": "1.0.0",
+  "description": "A simple API GraphQL for experiencing testing frameworks",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredmoreira/phone-book-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "api",
+    "test",
+    "automation"
+  ],
+  "author": "Frederico Moreira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredmoreira/phone-book-graphql/issues"
+  },
+  "homepage": "https://github.com/fredmoreira/phone-book-graphql#readme",
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  }
+}
