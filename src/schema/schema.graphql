@@ -2,7 +2,7 @@ type Contact {
     id: ID!
     name: String!
     phone: String!
-    mobilephone: String!
+    mobilephone: String
 }
 
 type Query {
@@ -11,5 +11,5 @@ type Query {
 }
 
 type Mutation {
-    createContact(name: String!, phone: String!): Contact
+    createContact(name: String!, phone: String!, mobilephone: String): Contact
 }
