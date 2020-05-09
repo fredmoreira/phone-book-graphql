@@ -8,7 +8,7 @@
     "code:format": "./node_modules/.bin/prettier --write src/**/*.js && npm run code:prettier",
     "code:lint": "./node_modules/.bin/eslint .",
     "code:prettier": "./node_modules/.bin/prettier --check \"**/*.js*\"",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "./node_modules/.bin/jest -i",
     "start": "node -r esm src/server.js"
   },
   "repository": {
@@ -38,6 +38,8 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "jest": "^25.3.0",
+    "supertest": "^4.0.2"
   }
 }
