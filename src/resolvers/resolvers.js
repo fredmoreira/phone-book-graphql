@@ -1,4 +1,4 @@
-import Contact from '../model/contacts'; 
+import Contact from '../model/contacts';
 
 const resolvers = {
   Query: {
@@ -6,7 +6,8 @@ const resolvers = {
     contact: (_, { id }) => Contact.findById(id),
   },
   Mutation: {
-    createContact: (_, { name, phone, mobilephone}) => Contact.create({name , phone, mobilephone}),
+    createContact: (_, { name, phone, mobilephone }) =>
+      Contact.create({ name, phone, mobilephone }),
   },
 };
 
