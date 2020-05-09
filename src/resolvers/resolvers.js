@@ -1,15 +1,14 @@
-const contacts = [
-  { id: 1, name: 'Fred', phone: '999888777', mobilephone: '888777999' },
-  { id: 2, name: 'Tester', phone: '777888111', mobilephone: '22222288' },
-  { id: 3, name: 'DevJs', phone: '666555444', mobilephone: '223556889' },
-];
+import Contact from '../model/contacts';
 
-module.exports = {
+const resolvers = {
   Query: {
-    contacts: () => contacts,
-    contact: () => contacts[1],
+    contacts: () => Contact.find(),
+    contact: (_, { id }) => Contact.findById(id),
   },
   Mutation: {
-    createContact: () => contacts[0],
+    createContact: (_, { name, phone, mobilephone }) =>
+      Contact.create({ name, phone, mobilephone }),
   },
 };
+
+export default resolvers;
