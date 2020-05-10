@@ -8,7 +8,7 @@
     "code:format": "./node_modules/.bin/prettier --write src/**/*.js && npm run code:prettier",
     "code:lint": "./node_modules/.bin/eslint .",
     "code:prettier": "./node_modules/.bin/prettier --check \"**/*.js*\"",
-    "test": "./node_modules/.bin/jest -i",
+    "test": "./node_modules/.bin/mocha --exit",
     "start": "node -r esm src/server.js"
   },
   "repository": {
@@ -27,19 +27,25 @@
     "url": "https://github.com/fredmoreira/phone-book-graphql/issues"
   },
   "homepage": "https://github.com/fredmoreira/phone-book-graphql#readme",
+  "mocha": {
+    "require": [
+      "esm"
+    ]
+  },
   "dependencies": {
     "esm": "^3.2.25",
     "graphql-yoga": "^1.18.3",
     "mongoose": "^5.9.13"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
     "husky": "^4.2.3",
+    "mocha": "^7.1.2",
     "prettier": "^1.19.1",
-    "jest": "^25.3.0",
     "supertest": "^4.0.2"
   }
 }
