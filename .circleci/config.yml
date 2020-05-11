@@ -23,8 +23,9 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: run-start
-          command: npm start
+          name: Starting server
+          command: |
+            npm start
           background: true
       - run: sleep 5
       - run:
