@@ -13,8 +13,8 @@ jobs:
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
       - run:
-          name: install-npm-register-employees
-          command: npm install
+          name: install-npm-phone-book-graphql
+          command: npm install --silent
       - run:
           name: lint-code
           command: npm run code:check       
@@ -29,5 +29,6 @@ jobs:
           background: true
       - run: sleep 5
       - run:
-          name: run-test
-          command: npm test
+          name: Running integration tests
+          command: |
+            npm test
