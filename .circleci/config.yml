@@ -1,7 +1,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/register-employees
+    working_directory: ~/phone-book-graphql
     docker:
       - image: circleci/node:10.18.0
       - image: mongo:4.0.3
@@ -22,6 +22,11 @@ jobs:
           key: dependency-cache-{{ checksum "package-lock.json" }}
           paths:
             - ./node_modules
+      - run:
+          name: run-start
+          command: npm start
+          background: true
+      - run: sleep 5
       - run:
           name: run-test
           command: npm test
