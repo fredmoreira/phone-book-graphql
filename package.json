@@ -4,6 +4,7 @@
   "description": "A simple API GraphQL for experiencing testing frameworks",
   "main": "src/server.js",
   "scripts": {
+    "ci": "start-server-and-test start http://localhost:4000 test",
     "code:check": "npm run code:lint && npm run code:prettier",
     "code:format": "./node_modules/.bin/prettier --write src/**/*.js && npm run code:prettier",
     "code:lint": "./node_modules/.bin/eslint .",
@@ -46,6 +47,7 @@
     "husky": "^4.2.3",
     "mocha": "^7.1.2",
     "prettier": "^1.19.1",
+    "start-server-and-test": "^1.11.0",
     "supertest": "^4.0.2"
   }
 }
