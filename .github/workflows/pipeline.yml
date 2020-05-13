@@ -40,4 +40,4 @@ jobs:
       run: npm run code:check
 
     - name: Starting Server and Runing Tests
-      run: npm test
+      run: npm run ci
