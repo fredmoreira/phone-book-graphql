@@ -1,5 +1,5 @@
 
-# Phone-Book-Graphql [![BCH compliance](https://bettercodehub.com/edge/badge/fredmoreira/phone-book-graphql?branch=master)](https://bettercodehub.com/results/fredmoreira/phone-book-graphql)
+# Phone-Book-Graphql [![BCH compliance](https://bettercodehub.com/edge/badge/fredmoreira/phone-book-graphql?branch=master)](https://bettercodehub.com/results/fredmoreira/phone-book-graphql) [![Known Vulnerabilities](https://snyk.io/test/github/fredmoreira/phone-book-graphql/badge.svg)](https://snyk.io/test/github/fredmoreira/phone-book-graphql)
 A simple API GraphQL for experiencing testing frameworks
 
 ## CircleCi [![CircleCI](https://circleci.com/gh/fredmoreira/phone-book-graphql.svg?style=svg)](https://circleci.com/gh/fredmoreira/phone-book-graphql) 
