@@ -10,7 +10,9 @@
     "code:lint": "./node_modules/.bin/eslint .",
     "code:prettier": "./node_modules/.bin/prettier --check \"**/*.js*\"",
     "test": "./node_modules/.bin/mocha --exit",
-    "start": "node -r esm src/server.js"
+    "start": "node -r esm src/server.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -36,7 +38,8 @@
   "dependencies": {
     "esm": "^3.2.25",
     "graphql-yoga": "^1.18.3",
-    "mongoose": "^5.9.13"
+    "mongoose": "^5.9.13",
+    "snyk": "^1.320.3"
   },
   "devDependencies": {
     "chai": "^4.2.0",
@@ -49,5 +52,6 @@
     "prettier": "^1.19.1",
     "start-server-and-test": "^1.11.0",
     "supertest": "^4.0.2"
-  }
+  },
+  "snyk": true
 }
