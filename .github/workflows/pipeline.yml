@@ -32,13 +32,12 @@ jobs:
       uses: supercharge/mongodb-github-action@1.2.0
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
-        
-    - name: Install Dependencies 
-      uses: actions/setup-node@v1     
-    - run: npm ci
-    - name: Runing Lint Code
-      uses: actions/setup-node@v1
-    - run: npm run code:check
+
+    - name: Install Dependencies
+      run: npm ci
+
+    - name: Lint Code Check
+      run: npm run code:check
+
     - name: Starting Server and Runing Tests
-      uses: actions/setup-node@v1
-    - run: npm run ci  
+      run: npm test
