@@ -23,12 +23,5 @@ jobs:
           paths:
             - ./node_modules
       - run:
-          name: Starting server
-          command: |
-            npm start
-          background: true
-      - run: sleep 5
-      - run:
-          name: Running integration tests
-          command: |
-            npm test
+          name: Starting Server and Running Integration Tests
+          command: npm run ci    

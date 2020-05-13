@@ -1,6 +1,9 @@
-![Build | Lint | Test](https://github.com/fredmoreira/phone-book-graphql/workflows/Build%20%7C%20Lint%20%7C%20Test/badge.svg)
-# phone-book-graphql  [![CircleCI](https://circleci.com/gh/fredmoreira/phone-book-graphql.svg?style=svg)](https://circleci.com/gh/fredmoreira/phone-book-graphql) 
+
+# Phone-Book-Graphql
 A simple API GraphQL for experiencing testing frameworks
+
+## CircleCi [![CircleCI](https://circleci.com/gh/fredmoreira/phone-book-graphql.svg?style=svg)](https://circleci.com/gh/fredmoreira/phone-book-graphql) 
+## Github Actions [![Build | Lint | Test](https://github.com/fredmoreira/phone-book-graphql/workflows/Build%20%7C%20Lint%20%7C%20Test/badge.svg)](https://github.com/fredmoreira/phone-book-graphql/actions?query=workflow%3A%22Build+%7C+Lint+%7C+Test%22)
 
 ## Requirements
 
