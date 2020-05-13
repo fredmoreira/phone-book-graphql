@@ -35,4 +35,11 @@ jobs:
         
     - run: npm ci
     - run: npm run code:check
-    - run: npm start && npm test
+    - run: npm start
+      
+  test:
+        runs-on: ubuntu-latest
+
+        steps:
+         - name: Runing Integrations Tests
+         - run: npm test  
