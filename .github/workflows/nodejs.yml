@@ -35,9 +35,7 @@ jobs:
         
     - name: Install Dependencies    
     - run: npm ci
-
     - name: Runing Lint Code
     - run: npm run code:check
-
     - name: Starting Server and Runing Tests
     - run: npm run ci  
