@@ -33,7 +33,7 @@ jobs:
       with:
         mongodb-version: ${{ matrix.mongodb-version }}
 
-    - name: Install Dependencies
+    - name: Install Dependencies and Check Vulnerability in Dependencies
       run: npm ci
 
     - name: Lint Code Check
