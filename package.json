@@ -9,7 +9,7 @@
     "code:format": "./node_modules/.bin/prettier --write src/**/*.js && npm run code:prettier",
     "code:lint": "./node_modules/.bin/eslint .",
     "code:prettier": "./node_modules/.bin/prettier --check \"**/*.js*\"",
-    "prestart": "mongoimport --db=phone-book-graphql --collection=contacts --file=./test/data/contacts.bson",
+    "prestart": "mongorestore --db=phone-book-graphql --collection=contacts ./test/data/contacts.bson",
     "test": "./node_modules/.bin/mocha --exit",
     "start": "node -r esm src/server.js",
     "snyk-protect": "snyk protect",
