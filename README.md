@@ -32,3 +32,42 @@ npm i
 npm start
 ```
 
+## Runing integration tests
+
+```bash
+npm test
+```
+
+### Lint
+
+```bash
+npm run code:lint
+```
+### Code check
+
+```bash
+npm run code:check
+```
+
+### Prettier
+
+```bash
+npm run code:prettier
+```
+### Check vulnerabilities in dependencies
+
+```bash
+npm run snyk-protect
+```
+
+The *precommit* is done by *git hooks* by package [husky](https://github.com/typicode/husky).
+
+Therefore, whenever a *commit* is done, the following script will be executed:
+
+```bash
+npm run code:lint && npm run code:prettier
+```
+
+Any improvement will always be welcome.
+
+:)
