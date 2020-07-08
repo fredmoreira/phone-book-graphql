@@ -39,7 +39,7 @@
   "dependencies": {
     "esm": "^3.2.25",
     "graphql-yoga": "^1.18.3",
-    "mongoose": "^5.9.14",
+    "mongoose": "^5.9.19",
     "snyk": "^1.321.0"
   },
   "devDependencies": {
