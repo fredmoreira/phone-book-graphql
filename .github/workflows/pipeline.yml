@@ -37,7 +37,7 @@ jobs:
       run: npm ci
 
     - name: Lint Code Check
-      run: npm run code:check
+      run: npm run code:lint
 
     - name: Starting Server and Runing Tests
       run: npm run ci

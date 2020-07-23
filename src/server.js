@@ -1,15 +1,20 @@
-import { GraphQLServer } from 'graphql-yoga';
+import {ApolloServer, gql} from 'apollo-server';
 import mongoose from 'mongoose';
-import { resolve } from 'path';
+import fs from 'fs';
 import resolvers from './resolvers/resolvers';
 
-mongoose.connect('mongodb://localhost:27017/phone-book-graphql', {
+
+mongoose.connect ('mongodb://localhost:27017/phone-book-graphql', {
   useNewUrlParser: true,
 });
 
-const server = new GraphQLServer({
-  typeDefs: resolve(__dirname, 'schema/schema.graphql'),
+const typeDefs = gql(fs.readFileSync(__dirname.concat('/schema/schema.graphql'), 'utf8'));
+
+const server = new ApolloServer ({
+  typeDefs,
   resolvers,
 });
 
-server.start(() => console.log('Server is running on localhost:4000'));
+server.listen ().then (({url}) => {
+  console.log (`🚀 Server ready at ${url}`);
+});
