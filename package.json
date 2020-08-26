@@ -37,7 +37,7 @@
     "apollo-server": "^2.16.0",
     "esm": "^3.2.25",
     "graphql": "^15.3.0",
-    "mongoose": "^5.9.19",
+    "mongoose": "^5.9.27",
     "snyk": "^1.342.2"
   },
   "devDependencies": {
