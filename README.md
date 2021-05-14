@@ -68,6 +68,4 @@ Therefore, whenever a *commit* is done, the following script will be executed:
 npm run code:lint && npm run code:prettier
 ```
 
-Any improvement will always be welcome.
-
-:)
+Any improvement will always be welcome.  🚀 😄
