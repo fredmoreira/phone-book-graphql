@@ -38,7 +38,7 @@
     "esm": "^3.2.25",
     "graphql": "^15.5.0",
     "mongoose": "^6.0.4",
-    "snyk": "^1.696.0"
+    "snyk": "^1.685.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
