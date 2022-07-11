@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "apollo-server": "^3.0.0",
+    "apollo-server": "^3.4.1",
     "esm": "^3.2.25",
     "graphql": "^15.8.0",
     "mongoose": "^6.2.11",
