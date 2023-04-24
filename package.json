@@ -46,7 +46,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-import": "^2.20.1",
-    "husky": "^4.2.3",
+    "husky": "^8.0.3",
     "mocha": "^10.2.0",
     "start-server-and-test": "^1.11.2",
     "supertest": "^4.0.2"
